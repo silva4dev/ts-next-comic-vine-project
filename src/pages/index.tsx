@@ -44,8 +44,9 @@ export default function Index() {
                 const offset = (currentPage - 1) * CHARACTERS_PER_PAGE;
                 const limit = CHARACTERS_PER_PAGE;
                 const page = currentPage;
-                const url = `/api/characters?offset=${offset}&limit=${limit}&page=${page}&name=${name}`;
-                const response = await axios.get(url);
+                const response = await axios.get(
+                    `/api/characters?offset=${offset}&limit=${limit}&page=${page}&name=${name}`
+                );
                 const data = response.data;
                 dispatch(setCharacters(data));
             } catch (error) {
