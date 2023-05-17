@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-
 import Logo from "@/assets/images/logo.svg";
 
 export function Navbar() {
