@@ -141,7 +141,7 @@ export default function Index() {
                             Results per page
                         </label>
                         <select
-                            className="h-10 text-[18px] rounded-md w-20 p-2 focus:outline focus:outline-green-500"
+                            className="h-10 bg-white text-[18px] rounded-md w-20 p-2 focus:outline focus:outline-green-500"
                             id="searchQueryLimit"
                             value={searchQueryLimit}
                             onChange={(e) => {

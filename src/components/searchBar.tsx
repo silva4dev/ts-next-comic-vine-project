@@ -18,7 +18,7 @@ export function SearchBar({
         <div className="relative mb-20">
             <input
                 type="text"
-                className="text-xl placeholder:text-gray-400 text-green-700 w-full h-16 p-4 absolute rounded-md focus:outline-green-500"
+                className="text-xl placeholder:text-gray-400 text-green-700 w-full h-16 p-4 absolute rounded-md focus:outline focus:outline-green-500"
                 value={searchBar}
                 onChange={(e) => setSearchBar(e.target.value)}
                 onKeyDown={(e) => {

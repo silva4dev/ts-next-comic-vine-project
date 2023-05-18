@@ -85,11 +85,11 @@ export default function CharactersDetails() {
                 ) : (
                     <div className="flex flex-col items-start mt-6">
                         <Image
+                            loader={() => character?.image?.original_url}
                             className="rounded-t-md w-full h-[650px] max-sm:h-[500px] object-cover object-top"
                             src={character?.image?.original_url}
                             width={325}
                             height={650}
-                            loader={() => character?.image?.original_url}
                             alt={character.name}
                         />
                         <Character character={character} />
