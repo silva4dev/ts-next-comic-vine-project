@@ -8,14 +8,12 @@ type DefaultLayoutProps = {
 
 export function DefaultLayout({ children }: DefaultLayoutProps) {
     return (
-        <section className="flex flex-col h-screen">
+        <div className="flex flex-col min-h-screen">
             <Navbar />
-            <main className="bg-gray-200 flex-grow">
-                <section className="max-w-[1300px] mx-auto mt-8 pb-16">
-                    {children}
-                </section>
+            <main className="flex-grow bg-gray-200">
+                <div className="max-w-7xl mx-auto mt-8 pb-16">{children}</div>
             </main>
             <Footer />
-        </section>
+        </div>
     );
 }

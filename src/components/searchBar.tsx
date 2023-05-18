@@ -3,14 +3,16 @@ import { FaSearch } from "react-icons/fa";
 
 type SearchBarProps = {
     searchBar: string;
-    getAllCharacters: (name: string) => void;
     setSearchBar: (name: string) => void;
+    setSearchQueryName: any;
+    setSearchQueryPage: any;
 };
 
 export function SearchBar({
     searchBar,
-    getAllCharacters,
     setSearchBar,
+    setSearchQueryName,
+    setSearchQueryPage,
 }: SearchBarProps) {
     return (
         <div className="relative mb-20">
@@ -21,13 +23,21 @@ export function SearchBar({
                 onChange={(e) => setSearchBar(e.target.value)}
                 onKeyDown={(e) => {
                     if (e.code === "Enter") {
-                        getAllCharacters(searchBar);
+                        setSearchQueryName(() => {
+                            setSearchQueryPage(() => 1);
+                            return searchBar;
+                        });
                     }
                 }}
-                placeholder="Pesquise por um personagem ..."
+                placeholder="Search for a character..."
             />
             <FaSearch
-                onClick={() => getAllCharacters(searchBar)}
+                onClick={() => {
+                    setSearchQueryName(() => {
+                        setSearchQueryPage(() => 1);
+                        return searchBar;
+                    });
+                }}
                 className="hover:cursor-pointer text-white bg-green-600 rounded-r-md p-5 w-16 absolute right-0 align-middle h-16"
             />
         </div>

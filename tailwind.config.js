@@ -6,6 +6,12 @@ module.exports = {
         "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
         "./src/layouts/**/*.{js,ts,jsx,tsx,mdx}",
     ],
-    theme: {},
+    theme: {
+        extend: {
+            objectPosition: {
+                'center-bottom': 'center top',
+            }
+        },
+    },
     plugins: [],
 }

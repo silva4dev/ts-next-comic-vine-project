@@ -28,14 +28,14 @@ export function Pagination({
                 onClick={goToFirstPage}
                 disabled={currentPage === 1}
             >
-                Primeiro
+                First
             </button>
             <button
                 className="mr-2 text-xl px-4 py-2 rounded-md bg-green-500 text-white hover:filter hover:brightness-95"
                 onClick={goToPreviousPage}
                 disabled={currentPage === 1}
             >
-                Anterior
+                Previous
             </button>
             {getPageRange().map((page) => (
                 <button
@@ -55,14 +55,14 @@ export function Pagination({
                 onClick={goToNextPage}
                 disabled={currentPage === totalPages}
             >
-                Próximo
+                Next
             </button>
             <button
                 className="px-4 text-xl py-2 rounded-md bg-green-500 text-white hover:filter hover:brightness-95"
                 onClick={goToLastPage}
                 disabled={currentPage === totalPages}
             >
-                Último
+                Last
             </button>
         </div>
     );
