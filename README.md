@@ -21,7 +21,6 @@ Aplicação atende a todas as pessoas que desejam conhecer mais o mundo dos quad
 5. Duplique o arquivo .env.example na raiz do projeto
 6. Renomei o arquivo .env.example para .env
 7. Adicione a chave da API no arquivo .env
-8. Projeto pronto para uso
 
 # 📺 Telas
 ![Listagem dos personagens](./doc/screen1.png)
