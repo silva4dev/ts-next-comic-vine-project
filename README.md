@@ -1,27 +1,27 @@
-# 📙 Sobre o projeto
-Aplicação atende a todas as pessoas que desejam conhecer mais o mundo dos quadrinhos, sendo possivel acompanhar de perto todos os personagens e suas respectivas histórias utilizando a base de dados da Comic Vine que é o maior banco de dados de quadrinhos on-line, que também apresenta análises de quadrinhos, notícias, vídeos e fóruns para as últimas novidades relacionadas a quadrinhos.
+# 📙 About the project
+The application caters to all people who want to know more about the world of comics, being able to closely follow all the characters and their respective stories using the Comic Vine database, which is the largest online comic database, which also features comic reviews, news, videos, and forums for the latest comic-related news.
 
-# 🏃 Começando
-## 📝 Requisitos
+# 🏃 Getting started
+## 📝 Requirements
 * npm
   ```sh
   npm install npm@latest -g
   ```
-## ⚙️ Instalação
-1. Criar uma conta em https://comicvine.gamespot.com
-2. Pegar sua chave da API aqui: https://comicvine.gamespot.com/api
-3. Clonar o repositório
+## ⚙️ Installation
+1. Create an account at https://comicvine.gamespot.com
+2. Get your API key here: https://comicvine.gamespot.com/api
+3. Clone the repository
 ```sh
-    git clone git@github.com:silva4dev/ts-next-idinheiro-challenges.git
+    git clone git@github.com:silva4dev/ts-next-money-challenges.git
 ```
-4. Instalar as dependências
+4. Install dependencies
 ```sh
    npm install
 ```
-5. Duplique o arquivo .env.example na raiz do projeto
-6. Renomei o arquivo .env.example para .env
-7. Adicione a chave da API no arquivo .env
+5. Duplicate the .env.example file in the root of the project
+6. Rename the .env.example file to .env
+7. Add API key in .env file
 
-# 📺 Telas
-![Listagem dos personagens](./doc/screen1.png)
-![Detalhes de um personagem](./doc/screen2.png)
+# 📺 Screens
+![List of characters](./doc/screen1.png)
+![Details of a character](./doc/screen2.png)
