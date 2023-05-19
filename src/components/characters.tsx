@@ -1,14 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
-type CharactersProps = {
-    character: {
-        id: number;
-        name: string;
-        image: { thumb_url: string };
-    };
-};
+import { CharactersProps } from "@/types";
 
 export function Characters({ character }: CharactersProps) {
     return (

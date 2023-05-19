@@ -1,10 +1,7 @@
 import React from "react";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-
-type DefaultLayoutProps = {
-    children: React.ReactNode;
-};
+import { DefaultLayoutProps } from "@/types";
 
 export function DefaultLayout({ children }: DefaultLayoutProps) {
     return (

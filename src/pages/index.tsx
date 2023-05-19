@@ -7,23 +7,14 @@ import { SearchBar } from "@/components/searchBar";
 import { Characters } from "@/components/characters";
 import { Pagination } from "@/components/pagination";
 import { setCharacters, setLoading } from "@/redux/slices/characters";
-
-type Character = {
-    id: number;
-    name: string;
-    image: { thumb_url: string };
-};
-
-type Characters = {
-    number_of_total_results: number;
-    results: Character[];
-};
+import { Characters as CharactersProps } from "@/types";
+import { Character as CharacterProps } from "@/types";
 
 export default function Index() {
     const dispatch = useAppDispatch();
     const data = useAppSelector(
         (state) => state.characters.characters
-    ) as unknown as Characters;
+    ) as unknown as CharactersProps;
     const isLoading = useAppSelector((state) => state.characters.loading);
     const [searchBar, setSearchBar] = React.useState("");
     const [searchQueryName, setSearchQueryName] = React.useState("");
@@ -170,7 +161,7 @@ export default function Index() {
                     </div>
                 ) : (
                     <div className="flex justify-center flex-wrap mt-5 gap-4">
-                        {characters.map((character: Character) => (
+                        {characters.map((character: CharacterProps) => (
                             <Characters
                                 key={character.id}
                                 character={character}

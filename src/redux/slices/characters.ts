@@ -1,9 +1,5 @@
+import { CharacterState } from "@/types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-
-type CharacterState = {
-  characters: any[];
-  loading: boolean;
-};
 
 const initialState: CharacterState = {
   characters: [],

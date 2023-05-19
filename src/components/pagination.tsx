@@ -1,15 +1,5 @@
 import React from "react";
-
-type PaginationProps = {
-    currentPage: number;
-    totalPages: number;
-    goToFirstPage: () => void;
-    goToPreviousPage: () => void;
-    getPageRange: () => any[];
-    handlePageChange: (page: number) => void;
-    goToNextPage: () => void;
-    goToLastPage: () => void;
-};
+import { PaginationProps } from "@/types";
 
 export function Pagination({
     currentPage,

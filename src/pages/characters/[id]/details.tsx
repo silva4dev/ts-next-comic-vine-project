@@ -9,26 +9,7 @@ import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { setCharacter, setLoading } from "@/redux/slices/charactersDetails";
 import { MagnifyingGlass } from "react-loader-spinner";
 import { Character } from "@/components/character";
-
-type CharacterDetail = {
-    name: string;
-    gender: number;
-    deck: string;
-    image: { original_url: string };
-    publisher: { name: string };
-    description: string;
-    real_name: string;
-    aliases: string;
-    powers: [{ name: string }];
-    movies: [{ name: string }];
-    origin: { name: string };
-    date_added: string;
-    date_last_updated: string;
-};
-
-type CharactersDetails = {
-    results: CharacterDetail;
-};
+import { CharactersDetailsProps } from "@/types";
 
 export default function CharactersDetails() {
     const router = useRouter();
@@ -36,7 +17,7 @@ export default function CharactersDetails() {
     const dispatch = useAppDispatch();
     const data = useAppSelector(
         (state) => state.charactersDetails.character
-    ) as unknown as CharactersDetails;
+    ) as unknown as CharactersDetailsProps;
     const isLoading = useAppSelector(
         (state) => state.charactersDetails.loading
     );

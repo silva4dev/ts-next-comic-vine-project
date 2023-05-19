@@ -1,12 +1,6 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
-
-type SearchBarProps = {
-    searchBar: string;
-    setSearchBar: (name: string) => void;
-    setSearchQueryName: any;
-    setSearchQueryPage: any;
-};
+import { SearchBarProps } from "@/types";
 
 export function SearchBar({
     searchBar,

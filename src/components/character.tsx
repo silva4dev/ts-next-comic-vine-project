@@ -1,23 +1,6 @@
 import React from "react";
 import moment from "moment";
-
-type CharacterProps = {
-    character: {
-        name: string;
-        gender: number;
-        deck: string;
-        image: { original_url: string };
-        publisher: { name: string };
-        description: string;
-        real_name: string;
-        aliases: string;
-        powers: [{ name: string }];
-        movies: [{ name: string }];
-        origin: { name: string };
-        date_added: string;
-        date_last_updated: string;
-    };
-};
+import { CharacterProps } from "@/types";
 
 export function Character({ character }: CharacterProps) {
     return (
