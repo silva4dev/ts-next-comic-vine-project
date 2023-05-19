@@ -18,6 +18,7 @@ export function Characters({ character }: CharactersProps) {
                     className="rounded-t-md h-60 w-72 object-cover object-top"
                     loader={() => character?.image?.thumb_url}
                     src={character?.image?.thumb_url}
+                    unoptimized
                     width={288}
                     height={240}
                     alt={character?.name}
