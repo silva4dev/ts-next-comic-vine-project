@@ -1,5 +1,5 @@
 # 📙 Sobre o projeto
-Aplicação foi criada para todos os amantes em quadrinhos, sendo possivel acompanhar de perto todos os personagens e suas respectivas histórias utilizando a base de dados da Comic Vine que é o maior banco de dados de quadrinhos on-line, que também apresenta análises de quadrinhos, notícias, vídeos e fóruns para as últimas novidades relacionadas a quadrinhos.
+Aplicação atende a todas as pessoas que desejam conhecer mais o mundo dos quadrinhos, sendo possivel acompanhar de perto todos os personagens e suas respectivas histórias utilizando a base de dados da Comic Vine que é o maior banco de dados de quadrinhos on-line, que também apresenta análises de quadrinhos, notícias, vídeos e fóruns para as últimas novidades relacionadas a quadrinhos.
 
 # 🏃 Começando
 ## 📝 Requisitos
