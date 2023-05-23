@@ -12,7 +12,7 @@ The application caters to all people who want to know more about the world of co
 2. Get your API key here: https://comicvine.gamespot.com/api
 3. Clone the repository
 ```sh
-    git clone git@github.com:silva4dev/ts-next-money-challenges.git
+    git clone git@github.com:silva4dev/ts-next-idinheiro-challenges.git
 ```
 4. Install dependencies
 ```sh
